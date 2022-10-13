@@ -6,6 +6,7 @@ body {
 }
 
 header {
+    position: static;
     text-align: center;
     color: purple;
     font-size: 1em;
@@ -27,6 +28,11 @@ h2{
 main{
     display: block;
 }
+main ul{
+    position: relative;
+    left: 100px;
+}
+
 Footer{
     font-size: 15Q
 }
