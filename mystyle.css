@@ -22,8 +22,27 @@ h2{
 #contents {
     font-size: 2ch;
 }
-#agenda {
-    display: inline;
+#agenda #media{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+#agenda #media2{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "one two"
+        "three four";
+}
+#css{
+    grid-area: one;
+    justify-self: center;
+} 
+#cssEx{
+    grid-area: four;
+    justify-self: end;
 }
 main{
     display: block;
@@ -34,7 +53,8 @@ main ul{
 }
 
 Footer{
-    font-size: 15Q
+    font-size: 15Q;
+    display: inline;
 }
 h2:hover {
     color: rgb(0, 222, 255);
