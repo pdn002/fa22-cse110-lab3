@@ -15,7 +15,8 @@ header {
     font-size: 8ex;
 }
 h2{
-    font-size:50px
+    font-size:50px;
+    text-decoration: underline;
 }
 #contents {
     font-size: 2ch
