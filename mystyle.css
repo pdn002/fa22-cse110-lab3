@@ -19,7 +19,13 @@ h2{
     text-decoration: underline;
 }
 #contents {
-    font-size: 2ch
+    font-size: 2ch;
+}
+#agenda {
+    display: inline;
+}
+main{
+    display: block;
 }
 Footer{
     font-size: 15Q
