@@ -4,12 +4,17 @@ body {
     background-color: #000000;
     font-size: .5cm;
 }
+*{
+    font-family: "Lucida Console", "Courier New", monospace;
+}
 
 header {
     position: static;
     text-align: center;
-    color: purple;
     font-size: 1em;
+}
+a[href="https://github.com/pdn002"] {
+    color: purple;
 }
 #title {
     color: rgb(0, 222, 255);
@@ -19,7 +24,7 @@ h2{
     font-size:50px;
     text-decoration: underline;
 }
-#contents {
+nav > section {
     font-size: 2ch;
 }
 #agenda #media{
@@ -28,7 +33,7 @@ h2{
     flex-direction: row-reverse;
     align-items: center;
 }
-#agenda #media2{
+#agenda .media2{
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
@@ -46,11 +51,11 @@ h2{
 }
 main{
     display: block;
+    
 }
 main ul{
     position: relative;
     left: 100px;
-    font-family: "Lucida Console", "Courier New", monospace;
 }
 @media only screen and (max-width: 600px) {
     main {
@@ -66,4 +71,17 @@ h2:hover {
 }
 a:active{
     color: rgb(0, 222, 255);
+}
+nav, #present{
+    background-color: navy;
+}
+main + section{
+    background-color: gray;
+    color: black
+}
+li ~ li{
+    color:gray
+}
+section.media2{
+    background-color: #1b1919
 }
