@@ -36,3 +36,9 @@ main ul{
 Footer{
     font-size: 15Q
 }
+h2:hover {
+    color: rgb(0, 222, 255);
+}
+a:active{
+    color: rgb(0, 222, 255);
+}
