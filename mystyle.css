@@ -50,6 +50,7 @@ main{
 main ul{
     position: relative;
     left: 100px;
+    font-family: "Lucida Console", "Courier New", monospace;
 }
 @media only screen and (max-width: 600px) {
     main {
