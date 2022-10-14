@@ -17,10 +17,10 @@ a[href="https://github.com/pdn002"] {
     color: purple;
 }
 h2{
-    font-size:50px;
+    font-size: 5ex;
     text-decoration: underline;
 }
-nav > section {
+div > section { /* specifically the child section in nav */
     font-size: 2ch;
 }
 #agenda #media{
@@ -29,7 +29,7 @@ nav > section {
     flex-direction: row-reverse;
     align-items: center;
 }
-#agenda .media2{
+#agenda .media2{ /* media 2 is decendant of agenda */
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
@@ -47,31 +47,73 @@ nav > section {
 }
 main{
     display: block;
-    
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    margin-right:50px;
+    border-style: double;
+    border-color: purple;
+    border-radius: 50px;
+    border-width: 10px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 1000px;
+    height: 450px;
 }
-main ul{
+ul ul{
     position: relative;
-    left: 100px;
+    left: .2in;
 }
 @media only screen and (max-width: 600px) {
     main {
       background-color: navy;
     }
   }
-h2:hover {
+a:hover {
     color: rgb(0, 222, 255);
 }
 a:active{
-    color: rgb(0, 222, 255);
+    color: red;
 }
 nav, #present{
-    background-color: navy;
+    margin: 100px 50px 100px 50px;
+    padding: 5px 20px 20px 20px;
+    border-style: double;
+    border-color: purple;
+    border-radius: 50px;
+    border-width: 10px;
 }
-main + section{
-    background-color: gray;
-    color: black
+#navAndPresent{ /* multiple elemnts*/
+    margin:auto;
+    display: grid;
+    width: 1000px;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "one two";  
 }
-li ~ li{
+div{
+    grid-area: one;
+    justify-self: center;
+}
+span{
+    grid-area: two;
+    justify-self: center
+}
+main + section{ /* same thing as conclusion*/
+    display: inline-block;
+    margin: 100px 50px 100px 50px;
+    padding: 5px 20px 20px 20px;
+    border-style: double;
+    border-color: purple;
+    border-radius: 50px;
+    border-width: 10px;
+    max-width: 1200px;
+    max-height: 500px;
+}
+li ~ li{ /* every bulletpoint following first */
     color:gray
 }
 section.media2{
